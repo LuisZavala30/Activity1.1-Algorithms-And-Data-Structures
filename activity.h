@@ -20,7 +20,11 @@
 // @return	The result of the addition from 1 to n.
 // =================================================================
 unsigned int sumaIterativa(unsigned int n) {
-	return 0;
+	int suma=0;
+	for(int i=1; i<=n; i++){
+		suma = suma+i;
+	}
+	return suma;
 }
 
 // =================================================================
@@ -31,7 +35,12 @@ unsigned int sumaIterativa(unsigned int n) {
 // @return	The result of the addition from 1 to n.
 // =================================================================
 unsigned int sumaRecursiva(unsigned int n) {
-	return 0;
+	if(n==1){
+		return 1;
+	}
+	else{
+		return (n+sumaRecursiva(n-1));
+	}
 }
 
 // =================================================================
@@ -42,7 +51,8 @@ unsigned int sumaRecursiva(unsigned int n) {
 // @return	The result of the addition from 1 to n.
 // =================================================================
 unsigned int sumaDirecta(unsigned int n) {
-	return 0;
+	int suma = (n*(n+1))/2;
+	return suma;
 }
 
 #endif /* ACTIVITY_H */

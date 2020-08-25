@@ -19,7 +19,7 @@ TEST(Activity11, IterativeSum) {
 	EXPECT_EQ(55, sumaIterativa(10));
 	EXPECT_EQ(1275, sumaIterativa(50));
 	EXPECT_EQ(5050, sumaIterativa(100));
-	EXPECT_EQ(125250, sumaIterativa(50));
+	EXPECT_EQ(125250, sumaIterativa(500));
 }
 
 TEST(Activity11, RecursiveSum) {
@@ -27,7 +27,7 @@ TEST(Activity11, RecursiveSum) {
 	EXPECT_EQ(55, sumaRecursiva(10));
 	EXPECT_EQ(1275, sumaRecursiva(50));
 	EXPECT_EQ(5050, sumaRecursiva(100));
-	EXPECT_EQ(125250, sumaRecursiva(50));
+	EXPECT_EQ(125250, sumaRecursiva(500));
 }
  
 TEST(Activity11, DirectSum) {
@@ -35,7 +35,7 @@ TEST(Activity11, DirectSum) {
 	EXPECT_EQ(55, sumaDirecta(10));
 	EXPECT_EQ(1275, sumaDirecta(50));
 	EXPECT_EQ(5050, sumaDirecta(100));
-	EXPECT_EQ(125250, sumaDirecta(50));
+	EXPECT_EQ(125250, sumaDirecta(500));
 }
  
 int main(int argc, char **argv)  {
