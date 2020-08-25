@@ -19,7 +19,7 @@
 // @param n	The maximum limit of the sum.
 // @return	The result of the addition from 1 to n.
 // =================================================================
-unsigned int sumaIterativa(unsigned int n) {
+unsigned int sumaIterativa(unsigned int n) {  //Este algoritmo es O(n)
 	int suma=0;
 	for(int i=1; i<=n; i++){
 		suma = suma+i;
@@ -34,12 +34,12 @@ unsigned int sumaIterativa(unsigned int n) {
 // @param n	The maximum limit of the sum.
 // @return	The result of the addition from 1 to n.
 // =================================================================
-unsigned int sumaRecursiva(unsigned int n) {
-	if(n==1){
+unsigned int sumaRecursiva(unsigned int n) {    //Este algoritmo es O(n)
+	if(n == 1){
 		return 1;
 	}
 	else{
-		return (n+sumaRecursiva(n-1));
+		return (n + sumaRecursiva(n-1)); 
 	}
 }
 
@@ -50,8 +50,8 @@ unsigned int sumaRecursiva(unsigned int n) {
 // @param n	The maximum limit of the sum.
 // @return	The result of the addition from 1 to n.
 // =================================================================
-unsigned int sumaDirecta(unsigned int n) {
-	int suma = (n*(n+1))/2;
+unsigned int sumaDirecta(unsigned int n) {  //Este algoritmo es O(1)
+	int suma = (n*(n+1)) / 2; // O(1)
 	return suma;
 }
 
