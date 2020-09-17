@@ -1,7 +1,7 @@
 // =================================================================
 //
 // File: activity.h
-// Author: Pedro Perez
+//
 // Description: This file contains the implementation of functions 
 //				of this activity.
 //
